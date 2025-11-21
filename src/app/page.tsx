@@ -324,9 +324,14 @@ export default function HomePage() {
               start yelling instructions at a cartoon cherry picker who secretly
               orchestrates a full AI stack.
             </p>
-            <button className="rounded-full bg-amber-400 text-neutral-950 px-6 py-2.5 text-sm font-semibold hover:bg-amber-300 transition">
+            <Link
+              href="https://github.com/funwae/file-cherry"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="rounded-full bg-amber-400 text-neutral-950 px-6 py-2.5 text-sm font-semibold hover:bg-amber-300 transition inline-block"
+            >
               Get FileCherry (dev preview)
-            </button>
+            </Link>
           </div>
         </div>
       </section>
