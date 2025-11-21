@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { CodyMascot } from "@/components/CodyMascot";
+import { CodyQuoteBubble } from "@/components/CodyQuoteBubble";
 
 export default function HomePage() {
   return (
@@ -42,11 +43,9 @@ export default function HomePage() {
             </p>
           </div>
           <div className="flex items-center justify-center">
-            <div className="relative">
+            <div className="flex flex-col items-center gap-3">
               <CodyMascot size="lg" mood="idle" className="drop-shadow-2xl" />
-              <div className="absolute -bottom-6 left-1/2 -translate-x-1/2 rounded-full bg-neutral-900/80 px-4 py-2 text-xs text-neutral-200 border border-neutral-800 backdrop-blur">
-                &ldquo;Quit stallin&apos;. What are we doing with all this?&rdquo;
-              </div>
+              <CodyQuoteBubble />
             </div>
           </div>
         </div>
