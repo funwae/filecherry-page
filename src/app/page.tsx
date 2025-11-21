@@ -333,8 +333,8 @@ export default function HomePage() {
             <Link href="/docs" className="hover:text-neutral-300">
               Docs
             </Link>
-            <Link href="https://github.com" className="hover:text-neutral-300">
-              GitHub (soon)
+            <Link href="https://github.com/funwae/file-cherry" className="hover:text-neutral-300" target="_blank" rel="noopener noreferrer">
+              GitHub
             </Link>
           </div>
         </div>
