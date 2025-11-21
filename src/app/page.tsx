@@ -101,51 +101,57 @@ export default function HomePage() {
             On the surface: three steps and a guy with too many cherries.
           </p>
           <div className="grid gap-6 md:grid-cols-3">
-            <div className="rounded-2xl border border-neutral-800 bg-neutral-900/60 p-5 flex flex-col gap-2">
+            <div className="group rounded-2xl border border-neutral-800 bg-neutral-900/60 p-5 flex flex-col gap-2 transition-all duration-300 hover:bg-neutral-900/80 hover:border-neutral-700 cursor-pointer">
               <div className="text-xs font-semibold uppercase tracking-wide text-neutral-400">
                 Step 1
               </div>
               <h3 className="font-semibold">Dump everything into <code className="px-1.5 py-0.5 rounded bg-neutral-900 text-amber-300">inputs/</code></h3>
-              <p className="text-sm text-neutral-300">
-                On your normal OS, plug in the stick and treat it like any
-                other drive. Toss in images, PDFs, docs, CSVs, exports – Cody
-                doesn&apos;t judge your folder naming choices.
-              </p>
-              <p className="text-xs text-neutral-500">
-                Bonus points if you resist the urge to tidy first. This is a
-                chaos-friendly zone.
-              </p>
+              <div className="max-h-0 overflow-hidden opacity-0 group-hover:max-h-96 group-hover:opacity-100 transition-all duration-300 ease-in-out">
+                <p className="text-sm text-neutral-300 pt-2">
+                  On your normal OS, plug in the stick and treat it like any
+                  other drive. Toss in images, PDFs, docs, CSVs, exports – Cody
+                  doesn&apos;t judge your folder naming choices.
+                </p>
+                <p className="text-xs text-neutral-500 pt-2">
+                  Bonus points if you resist the urge to tidy first. This is a
+                  chaos-friendly zone.
+                </p>
+              </div>
             </div>
-            <div className="rounded-2xl border border-neutral-800 bg-neutral-900/60 p-5 flex flex-col gap-2">
+            <div className="group rounded-2xl border border-neutral-800 bg-neutral-900/60 p-5 flex flex-col gap-2 transition-all duration-300 hover:bg-neutral-900/80 hover:border-neutral-700 cursor-pointer">
               <div className="text-xs font-semibold uppercase tracking-wide text-neutral-400">
                 Step 2
               </div>
               <h3 className="font-semibold">Boot, talk, let Cody plan</h3>
-              <p className="text-sm text-neutral-300">
-                Boot from the USB. FileCherry scans <code className="px-1.5 py-0.5 rounded bg-neutral-900 text-amber-300">inputs/</code>, then
-                Ollama asks: <em>&ldquo;What do you want to do with these
-                files?&rdquo;</em>
-              </p>
-              <p className="text-sm text-neutral-300">
-                You answer in plain English. The orchestrator builds a plan and
-                drives ComfyUI + doc analysis pipelines while Cody pretends
-                this is fine.
-              </p>
+              <div className="max-h-0 overflow-hidden opacity-0 group-hover:max-h-96 group-hover:opacity-100 transition-all duration-300 ease-in-out">
+                <p className="text-sm text-neutral-300 pt-2">
+                  Boot from the USB. FileCherry scans <code className="px-1.5 py-0.5 rounded bg-neutral-900 text-amber-300">inputs/</code>, then
+                  Ollama asks: <em>&ldquo;What do you want to do with these
+                  files?&rdquo;</em>
+                </p>
+                <p className="text-sm text-neutral-300 pt-2">
+                  You answer in plain English. The orchestrator builds a plan and
+                  drives ComfyUI + doc analysis pipelines while Cody pretends
+                  this is fine.
+                </p>
+              </div>
             </div>
-            <div className="rounded-2xl border border-neutral-800 bg-neutral-900/60 p-5 flex flex-col gap-2">
+            <div className="group rounded-2xl border border-neutral-800 bg-neutral-900/60 p-5 flex flex-col gap-2 transition-all duration-300 hover:bg-neutral-900/80 hover:border-neutral-700 cursor-pointer">
               <div className="text-xs font-semibold uppercase tracking-wide text-neutral-400">
                 Step 3
               </div>
               <h3 className="font-semibold">Shut down &amp; grab the cherries</h3>
-              <p className="text-sm text-neutral-300">
-                When Cody&apos;s done, everything is neatly stacked in{" "}
-                <code className="px-1.5 py-0.5 rounded bg-neutral-900 text-amber-300">outputs/&lt;job-id&gt;/</code> – cleaned images, reports,
-                manifests, whatever you asked for.
-              </p>
-              <p className="text-xs text-neutral-500">
-                Power off, unplug, plug back into your Mac/PC, drag the
-                results into your real life.
-              </p>
+              <div className="max-h-0 overflow-hidden opacity-0 group-hover:max-h-96 group-hover:opacity-100 transition-all duration-300 ease-in-out">
+                <p className="text-sm text-neutral-300 pt-2">
+                  When Cody&apos;s done, everything is neatly stacked in{" "}
+                  <code className="px-1.5 py-0.5 rounded bg-neutral-900 text-amber-300">outputs/&lt;job-id&gt;/</code> – cleaned images, reports,
+                  manifests, whatever you asked for.
+                </p>
+                <p className="text-xs text-neutral-500 pt-2">
+                  Power off, unplug, plug back into your Mac/PC, drag the
+                  results into your real life.
+                </p>
+              </div>
             </div>
           </div>
         </div>
