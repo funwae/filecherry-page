@@ -27,9 +27,14 @@ export default function HomePage() {
               everything and stacks the results neatly in <code className="px-1.5 py-0.5 rounded bg-neutral-900 text-amber-300">outputs/</code>.
             </p>
             <div className="flex flex-wrap gap-4 pt-2">
-              <button className="rounded-full bg-amber-400 text-neutral-950 px-6 py-2.5 text-sm font-semibold hover:bg-amber-300 transition">
-                Download ISO (soon™)
-              </button>
+              <Link
+                href="https://github.com/funwae/file-cherry"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="rounded-full bg-amber-400 text-neutral-950 px-6 py-2.5 text-sm font-semibold hover:bg-amber-300 transition inline-block"
+              >
+                Download ISO
+              </Link>
               <Link
                 href="/docs"
                 className="rounded-full border border-neutral-700 px-6 py-2.5 text-sm font-medium text-neutral-100 hover:bg-neutral-900 transition"
